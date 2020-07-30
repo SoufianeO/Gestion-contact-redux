@@ -1,14 +1,15 @@
 {
   "name": "contactmanager",
-  "author": "Mohamed IDBRAHIM",
+  "author": "soufiane ounida",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://SoufianeO.github.io/Gestion-contact-redux",
   "dependencies": {
-    "axios": "^0.18.0",
-    "bootstrap": "^4.1.2",
+    "axios": "^0.18.1",
+    "bootstrap": "^4.5.0",
     "classnames": "^2.2.6",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react-dom": "^16.13.1",
     "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
@@ -18,9 +19,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
